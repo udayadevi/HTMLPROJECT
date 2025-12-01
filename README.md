@@ -5,7 +5,7 @@ It showcases my profile, education, technical skills, projects, certifications, 
 
 ## Project Overview
 
-- Single-page static website (`index.html`)
+- Single-page static website (project.html)
 - Sections included:
   - Profile & About Me
   - Contact Information
