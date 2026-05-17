@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amma Ruchulu Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background-color:#fff8f0;
+            color:#333;
+            line-height:1.7;
+        }
+
+        nav{
+            background-color:#8b4513;
+            padding:20px;
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd580;
+        }
+
+        header{
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-title{
+            font-size:65px;
+            margin-bottom:20px;
+        }
+
+        .hero-text{
+            font-size:22px;
+            max-width:700px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            background-color:#ffb347;
+            color:#5a2d0c;
+            padding:15px 35px;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+            background-color:#ffd580;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .section-title{
+            text-align:center;
+            font-size:42px;
+            color:#8b4513;
+            margin-bottom:40px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            margin-top:25px;
+            box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .menu-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .menu-item{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .menu-item:hover{
+            transform:scale(1.03);
+        }
+
+        .menu-item img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .menu-content{
+            padding:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table,th,td{
+            border:1px solid #d4a373;
+        }
+
+        th{
+            background-color:#8b4513;
+            color:white;
+        }
+
+        th,td{
+            padding:15px;
+            text-align:center;
+        }
+
+        ul{
+            margin-left:25px;
+            margin-top:15px;
+        }
+
+        iframe{
+            width:100%;
+            border:none;
+            border-radius:20px;
+            margin-top:20px;
+        }
+
+        video{
+            width:100%;
+            border-radius:20px;
+            margin-top:20px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        input,textarea{
+            padding:15px;
+            border-radius:10px;
+            border:1px solid #ccc;
+            font-size:16px;
+        }
+
+        button{
+            padding:15px;
+            border:none;
+            border-radius:10px;
+            background-color:#8b4513;
+            color:white;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background-color:#a0522d;
+        }
+
+        footer{
+            background-color:#5a2d0c;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:768px){
+
+            .hero-title{
+                font-size:42px;
+            }
+
+            nav{
+                flex-wrap:wrap;
+                gap:15px;
+            }
+
+            section{
+                padding:70px 7%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#special">Specials</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <header>
+
+        <h1 class="hero-title">
+            Amma Ruchulu 🍲
+        </h1>
+
+        <p class="hero-text">
+            Experience the authentic taste of homemade Telugu food
+            made with love, tradition and happiness.
+        </p>
+
+        <a href="#menu" class="btn">
+            Explore Menu
+        </a>
+
+    </header>
+
+
+    <section id="about">
+
+        <h2 class="section-title">About Us</h2>
+
+        <div class="card">
+
+            <p>
+                Welcome to <strong>Amma Ruchulu</strong>, where every dish
+                is prepared with <span style="color:#8b4513;font-weight:bold;">love and tradition</span>.
+            </p>
+
+            <br>
+
+            <p>
+                We serve delicious homemade Telugu food with authentic flavors.
+                Our restaurant provides a peaceful environment with tasty meals,
+                family-friendly service and traditional recipes.
+            </p>
+
+            <br>
+
+            <p>
+                <em>
+                    “Food made with love tastes better.”
+                </em>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="menu">
+
+        <h2 class="section-title">Our Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-item">
+
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop" alt="Biryani">
+
+                <div class="menu-content">
+
+                    <h3>Chicken Biryani</h3>
+
+                    <p>
+                        Delicious spicy Andhra style biryani.
+                    </p>
+
+                    <h4>₹250</h4>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item">
+
+                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop" alt="Meals">
+
+                <div class="menu-content">
+
+                    <h3>Traditional Meals</h3>
+
+                    <p>
+                        Homemade Telugu meals served fresh.
+                    </p>
+
+                    <h4>₹180</h4>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item">
+
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop" alt="Dosa">
+
+                <div class="menu-content">
+
+                    <h3>Masala Dosa</h3>
+
+                    <p>
+                        Crispy dosa with tasty chutneys.
+                    </p>
+
+                    <h4>₹120</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="special">
+
+        <h2 class="section-title">Special Items</h2>
+
+        <div class="card">
+
+            <table>
+
+                <tr>
+                    <th>Dish</th>
+                    <th>Speciality</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Gongura Chicken</td>
+                    <td>Traditional Andhra Taste</td>
+                    <td>₹280</td>
+                </tr>
+
+                <tr>
+                    <td>Paneer Curry</td>
+                    <td>Chef Special</td>
+                    <td>₹220</td>
+                </tr>
+
+                <tr>
+                    <td>Apricot Delight</td>
+                    <td>Sweet Dessert</td>
+                    <td>₹150</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="section-title">Why Choose Us?</h2>
+
+        <div class="card">
+
+            <ul>
+                <li>Fresh Ingredients</li>
+                <li>Traditional Homemade Recipes</li>
+                <li>Peaceful Environment</li>
+                <li>Family Friendly Restaurant</li>
+                <li>Affordable Prices</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <section id="video">
+
+        <h2 class="section-title">Restaurant Video</h2>
+
+        <div class="card">
+
+            <p>
+                Watch our delicious food preparation journey 🍛
+            </p>
+
+            <iframe height="450"
+            src="https://www.youtube.com/embed/xPPLbEFbCAo">
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="section-title">Our Story</h2>
+
+        <div class="card">
+
+<pre>
+Amma Ruchulu started with one dream:
+
+To serve homemade Telugu food
+with authentic taste and happiness.
+
+Every recipe is inspired by
+traditional family cooking.
+</pre>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="card">
+
+            <form>
+
+                <input type="text" placeholder="Enter your name">
+
+                <input type="email" placeholder="Enter your email">
+
+                <textarea rows="5" placeholder="Enter your message"></textarea>
+
+                <button type="submit">
+                    Book Table
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Amma Ruchulu Restaurant | Made with ❤️
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
+
