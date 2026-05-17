@@ -1,27 +1,75 @@
-# Personal Portfolio Website
+# HTML Projects Collection
 
-This repository contains a simple personal portfolio website built using **HTML**.  
-It showcases my profile, education, technical skills, projects, certifications, and contact details.
+This repository contains beginner-friendly frontend web development projects built using HTML and CSS.
 
-## Project Overview
+---
 
-- Single-page static website (project.html)
-- Sections included:
-  - Profile & About Me
-  - Contact Information
-  - Education Details (Table)
-  - Technical Skills
-  - Projects
-  - Certifications & Achievements
-  - Strengths
-  - Languages
+# Projects Included
 
-## Technologies Used
+## 1. Personal Portfolio Website
 
-- HTML5 (headings, paragraphs, lists, tables, links, image tag)
+A simple personal portfolio website created using basic HTML concepts for practicing web development fundamentals.
 
-## How to Run
+### Features
+- About Me section
+- Education details
+- Skills section
+- Contact information
+- Simple single-page design
 
-1. Download or clone this repository:
-   ```bash
-   git clone https://github.com/udayadevi/your-repo-name.git
+### Technologies Used
+- HTML5
+
+### File
+project1.html
+
+---
+
+## 2. Amma Ruchulu Restaurant Website
+
+A modern Telugu restaurant website designed using HTML and CSS with attractive UI and responsive layout. :contentReference[oaicite:0]{index=0}
+
+### Features
+- Beautiful landing page
+- Sticky navigation bar
+- About Us section
+- Restaurant menu with food images
+- Special items table
+- Restaurant video section
+- Contact form
+- Responsive design
+- Traditional Telugu restaurant theme
+
+### Technologies Used
+- HTML5
+- CSS3
+- Google Fonts
+- Unsplash Images
+- YouTube Embed
+
+### File
+project2.html
+
+---
+
+# Purpose of This Repository
+
+This repository was created for practicing frontend web development and improving HTML & CSS skills as a beginner developer.
+
+---
+
+# Future Improvements
+
+- Add JavaScript functionality
+- Add food ordering system
+- Improve responsiveness
+- Add animations and transitions
+- Deploy using GitHub Pages
+
+---
+
+# Author
+
+Udaya Devi  
+B.Tech CSE Student  
+Aspiring Frontend & MERN Stack Developer
